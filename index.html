@@ -8,29 +8,45 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
   <style>
-    body {
+    .landing {
       background-image: url(./images/Background.png);
       background-repeat: no-repeat;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
     }
+
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
+
     .bg-transparent {
       background: rgba(0, 0, 0, 0);
     }
 
-    /* .bg-purple {
-      background: url(./images/Background.png);
-    } */
+    .hero {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+    }
 
     .text-light {
       color: #fff;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand text-light ml-auto" href="#"><img src="./images/prasna-logo.png" alt="Prasna" height="100"
-          width="350"></a>
+
+  <div class="container-fluid landing">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand text-light ml-auto" href="#">Prasna</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,27 +70,82 @@
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <header class="hero bg-purple text-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Let's make it happen</h1>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident.</p>
-          <button class="btn btn-light">Start Free Trial</button>
+    </nav>
+    <div class="container hero-container">
+      <header class="hero bg-purple text-light py-5">
+        <div class="row">
+          <div class="col ml-5 my-auto">
+            <h1>Got a Question?</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident.</p>
+            <button class="btn btn-light">Ask Now</button>
+          </div>
+          <div class="col mr-auto">
+            <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
+          </div>
         </div>
-        <div class="col-md-6">
-          <!-- Add your image here -->
-          <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
+      </header>
+    </div>
+  </div>
+  <div class="container my-5">
+    <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Topic" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Discover</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Browse</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- Content Here -->
+    <div class="container">
+      <!-- Popular Genres Section -->
+      <h2>Popular Genres</h2>
+      <div class="row">
+        <!-- Add your genres here -->
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Genre Name</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Genre Name</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Genre Name</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Releases Section -->
+      <h2>New Releases</h2>
+      <div class="row">
+        <!-- Add your new releases here -->
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Release Name</h5>
+              <p class="card-text">Additional Information</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
-  </header>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
 </body>
 
 </html>
