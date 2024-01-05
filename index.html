@@ -57,8 +57,8 @@
       border: 1px solid black;
     }
 
-    .list-group-item {
-      /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); */
+    .topic-card:hover {
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.8);
     }
 
     .card-header,
@@ -123,22 +123,17 @@
           <form class="form-inline my-2 my-lg-0">
             <div class="input-group">
               <span class="input-group-text border-right-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                  </path>
-                </svg>
+                <i class="bi bi-search"></i>
               </span>
               <input type="text" class="form-control mr-sm-2 border-left-0" type="search" placeholder="Search Topic"
                 aria-label="Search">
             </div>
           </form>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Following</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Answer</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Notification</a></li>
+            <li class="nav-item"><a class="nav-link bg-secondary text-light border rounded h4 my-0 px-3 mx-1" href="#"><i class="bi bi-house-fill"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-dark border rounded h4 my-0 px-3 mx-1" href="#"><i class="bi bi-person"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-dark border rounded h4 my-0 px-3 mx-1" href="#"><i class="bi bi-pencil-square"></i></a></li>
+            <li class="nav-item"><a class="nav-link text-dark border rounded h4 my-0 px-3 mx-1" href="#"><i class="bi bi-bell"></i></a></li>
 
           </ul>
 
@@ -152,7 +147,7 @@
       <div class="row">
         <!-- Add your genres here -->
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/World.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Social</h5>
@@ -160,7 +155,7 @@
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/Psychology-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Psychology</h5>
@@ -168,7 +163,7 @@
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/Technology-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Technology</h5>
@@ -176,7 +171,7 @@
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/Science-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Science</h5>
@@ -184,7 +179,7 @@
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/Buisness-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Business</h5>
@@ -192,7 +187,7 @@
           </div>
         </div>
         <div class="col-sm-2">
-          <div class="card">
+          <div class="card topic-card">
             <img class="card-img-top" src="./images/Entertainment-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Entertainment</h5>
@@ -206,7 +201,7 @@
         <h2 class="border-bottom">New Posts:</h2>
         <div class="row">
           <!-- Left Column for Filters -->
-          <div class="col-md-2 border-right">
+          <div class="col-md-2 mt-2">
             <div class="list-group">
               <div class="border-bottom">
                 <div class="d-flex justify-content-between">
@@ -215,12 +210,7 @@
                 </div>
                 <div class="input-group my-1">
                   <span class="input-group-text border-right-0 bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                      viewBox="0 0 16 16">
-                      <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                      </path>
-                    </svg>
+                    <i class="bi bi-search"></i>
                   </span>
                   <input type="text" class="form-control mr-sm-2 border-left-0" type="search" placeholder="Keywords"
                     aria-label="Search">
@@ -244,49 +234,52 @@
               <div class="border-bottom">
                 <a href="#" class="list-group-item list-group-item-action border-0 py-auto my-2">Filter 6</a>
               </div>
-              
+
               <!-- Repeat for each filter option -->
             </div>
           </div>
           <!-- Middle Column -->
-          <div class="col-md-7 border-right">
+          <div class="col-md-7 border-left border-right">
             <div class="row">
               <!-- Post Card -->
               <div class="col-md-10 post mx-auto my-3">
                 <div class="card border-0 bg-transparent">
                   <div class="card-header py-0">
-                    <h6 class="text-secondary fa">Under {category} by {username} </h6>
+                    <h6 class="text-secondary">Under {category} by {username} </h6>
                     <h5 class="card-title my-0">Post 1</h5>
                   </div>
                   <div class="card-body">
-                    <div class="post-img-holder my-auto">
+                    <div class="post-img-holder mt-auto mb-1">
                       <img class="card-img-top" src="./images/post-example.jpg" alt="Post image">
                     </div>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit enim quis tortor ultrices elementum. Curabitur fringilla lacinia odio eu lobortis. Nullam pharetra felis ut mi scelerisque, ac vehicula massa sodales. Nunc auctor est id nulla commodo, at fringilla justo laoreet. Suspendisse ut eros ut justo dignissim finibus ut sit amet purus. Phasellus tempus justo ac felis sodales pellentesque. </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit enim
+                      quis tortor ultrices elementum. Curabitur fringilla lacinia odio eu lobortis. Nullam pharetra
+                      felis ut mi scelerisque, ac vehicula massa sodales. Nunc auctor est id nulla commodo, at fringilla
+                      justo laoreet. Suspendisse ut eros ut justo dignissim finibus ut sit amet purus. Phasellus tempus
+                      justo ac felis sodales pellentesque. </p>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn border-dark">Up vote</a>
-                    <a href="#" class="btn">Down vote</a>
-                    <a href="#" class="btn">Comment</a>
-                    <a href="#" class="btn">Share</a>
+                  <div class="card-footer border-top my-0 py-1">
+                    <a class="btn bg-secondary text-light h4 my-0 px-3" href="#"><i class="bi bi-arrow-up-square-fill"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-arrow-down-square"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-chat-left"></i></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-send-plus"></i></i></a>
                   </div>
                 </div>
               </div>
               <div class="col-md-10 post mx-auto">
                 <div class="card border-0 bg-transparent">
                   <div class="card-header py-0">
-                    <h6>Under {category} by {username} </h6>
+                    <h6 class="text-secondary">Under {category} by {username} </h6>
                     <h5 class="card-title my-0">Post 2</h5>
                   </div>
                   <div class="card-body">
-
                     <p class="card-text">Post Description</p>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn border-dark">Up Vote</a>
-                    <a href="#" class="btn">Down vote</a>
-                    <a href="#" class="btn">Comment</a>
-                    <a href="#" class="btn">Share</a>
+                  <div class="card-footer border-top my-0 py-1">
+                    <a class="btn bg-secondary text-light h4 my-0 px-3" href="#"><i class="bi bi-arrow-up-square-fill"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-arrow-down-square"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-chat-left"></i></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-send-plus"></i></i></a>
                   </div>
                 </div>
               </div>
@@ -301,11 +294,8 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
-
     </div>
   </div>
 </body>
