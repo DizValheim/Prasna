@@ -25,7 +25,9 @@
 
     .landing {
       background-image: url(./images/Background.png);
+      width: 100%;
       background-repeat: no-repeat;
+      background-position: center;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
     }
 
@@ -98,15 +100,6 @@
             <a class="nav-link text-light" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Ask a Question</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Popular Questions</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link text-light" href="#">Contact</a>
           </li>
         </ul>
@@ -114,19 +107,22 @@
     </nav>
     <div class="container hero-container">
       <header class="hero bg-purple text-light py-5">
-        <div class="row">
-          <div class="col ml-5 my-auto">
-            <h1>Got a Question?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat sapien eget massa fringilla
-              malesuada. Etiam dui dui, sodales a aliquam id, malesuada vitae lorem. Vestibulum semper blandit libero.
-            </p>
-            <button class="btn btn-light">Ask Now</button>
-          </div>
-          <div class="col mr-auto">
-            <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-2 my-auto">
+                    <h1>Got a Question?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat sapien eget massa fringilla
+                        malesuada. Etiam dui dui, sodales a aliquam id, malesuada vitae lorem. Vestibulum semper blandit libero.
+                    </p>
+                    <button class="btn btn-light">Ask Now</button>
+                </div>
+                <div class="col-12 col-md-6 order-md-1">
+                    <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
+                </div>
+            </div>
         </div>
-      </header>
+    </header>
+    
     </div>
   </div>
 
@@ -184,7 +180,7 @@
       <h2>Popular Categories</h2>
       <div class="row">
         <!-- Add your genres here -->
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/World.png" alt="world-icon">
             <div class="card-body">
@@ -192,7 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/Psychology-icon.png" alt="world-icon">
             <div class="card-body">
@@ -200,7 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/Technology-icon.png" alt="world-icon">
             <div class="card-body">
@@ -208,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/Science-icon.png" alt="world-icon">
             <div class="card-body">
@@ -216,7 +212,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/Buisness-icon.png" alt="world-icon">
             <div class="card-body">
@@ -224,7 +220,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-4">
           <div class="card topic-card">
             <img class="card-img-top" src="./images/Entertainment-icon.png" alt="world-icon">
             <div class="card-body">
