@@ -1,102 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prasna</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Roboto+Mono&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-  <style>
-    .container-wide {
-
-      width: 80%;
-      max-width: none;
-      margin: auto;
-    }
-
-    .landing {
-      background-image: url(./images/Background.png);
-      background-repeat: no-repeat;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-    }
-
-    .hero-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    .bg-transparent {
-      background: rgba(0, 0, 0, 0);
-    }
-
-    .hero {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 25px;
-    }
-
-    .text-light {
-      color: #fff;
-    }
-
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .post {
-      background-color: whitesmoke;
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .post:hover {
-      border: 1px solid black;
-    }
-
-    .list-group-item {
-      /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); */
-    }
-
-    .card-header,
-    .card-footer {
-      background: none;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./JS/script.js"></script>
 </head>
 
 <body>
 
-  <div class="container-fluid landing">
+  <div class="container-fluid landing" id="top">
     <nav class="navbar navbar-expand-lg navbar-primary">
-      <a class="navbar-brand text-light ml-auto" href="#">Prasna</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      <a class="navbar-brand text-light" style="font-family: 'Lobster', sans-serif;" href="./index.html">Prasna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <!-- <a class="nav-link text-light" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Ask a Question</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Popular Questions</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Help</a>
+            <a class="nav-link text-light" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#">Contact</a>
@@ -106,48 +39,79 @@
     </nav>
     <div class="container hero-container">
       <header class="hero bg-purple text-light py-5">
-        <div class="row">
-          <div class="col ml-5 my-auto">
-            <h1>Got a Question?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat sapien eget massa fringilla
-              malesuada. Etiam dui dui, sodales a aliquam id, malesuada vitae lorem. Vestibulum semper blandit libero.
-            </p>
-            <button class="btn btn-light">Ask Now</button>
-          </div>
-          <div class="col mr-auto">
-            <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-2 my-auto">
+                    <h1>Got a Question?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat sapien eget massa fringilla
+                        malesuada. Etiam dui dui, sodales a aliquam id, malesuada vitae lorem. Vestibulum semper blandit libero.
+                    </p>
+                    <a class="btn btn-light" id="get-started" href="#Home">Get Started</a>
+                </div>
+                <div class="col-12 col-md-6 order-md-1">
+                    <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
+                </div>
+            </div>
         </div>
-      </header>
+    </header>
+    
     </div>
   </div>
 
-  <div class="container-fluid my-5">
+  <div class="container-fluid mt-3" id="Home">
     <div class="container-wide px-0 py-0">
-      <nav class="navbar navbar-expand-lg">
-        <div class="collapse navbar-collapse">
-          <form class="form-inline my-2 my-lg-0">
-            <div class="input-group">
+      <nav class="navbar navbar-expand-lg border-bottom py-0">
+        <a class="navbar-brand text-purple" href="#" style=" font-family: 'Lobster', sans-serif;">Prasna</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-3 me-3">
+            <li class="nav-item">
+              <a class="nav-link bg-secondary text-light border rounded h4 my-0 px-3 mx-1" href="./index.html">
+                <i class="bi bi-house-fill"></i>
+                <span class="d-lg-none d-inline px-2">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h4 my-0 px-3 mx-1" href="./following.html">
+                <i class="bi bi-person"></i>
+                <span class="d-lg-none d-inline px-2">Following</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h4 my-0 px-3 mx-1" href="./answer.html">
+                <i class="bi bi-pencil-square"></i>
+                <span class="d-lg-none d-inline px-2">Answer</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h4 my-0 px-3 mx-1" href="#">
+                <i class="bi bi-bell"></i>
+                <span class="d-lg-none d-inline px-2">Notifications</span>
+              </a>
+            </li>
+          </ul>
+          <form class="form my-2 my-lg-0 me-auto">
+            <div class="input-group mx-auto ">
               <span class="input-group-text border-right-0 bg-transparent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                  </path>
-                </svg>
+                <i class="bi bi-search"></i>
               </span>
-              <input type="text" class="form-control mr-sm-2 border-left-0" type="search" placeholder="Search Topic"
+              <input type="text" class="form-control me-sm-2 border-start-0" type="search" placeholder="Search Topic"
                 aria-label="Search">
             </div>
           </form>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Following</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Answer</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Notification</a></li>
 
-          </ul>
+          <div class="me-2"></div>
 
+          <label class="switch me-2">
+            <input type="checkbox">
+            <span class="slider round" id="theme-toggle"><i class="bi bi-sun" id="theme-icon"></i></span>
+          </label>
+
+          <!-- <button class="btn btn-secondary text-light fw-bold rounded me-2" id="theme-toggle">Toggle Theme</button> -->
+          <a class="h4 my-auto" href="#"><i class="bi bi-person-circle h2"></i></a>
         </div>
       </nav>
     </div>
@@ -157,49 +121,49 @@
       <h2>Popular Categories</h2>
       <div class="row">
         <!-- Add your genres here -->
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/World.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/World.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Social</h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/Psychology-icon.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/Psychology-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Psychology</h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/Technology-icon.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/Technology-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Technology</h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/Science-icon.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/Science-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Science</h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/Buisness-icon.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/Buisness-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Business</h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <img class="card-img-top" src="./images/Entertainment-icon.png" alt="world-icon">
+        <div class="col-lg-2 col-sm-4">
+          <div class="card topic-card">
+            <img class="card-img-top img-fluid" src="./images/Entertainment-icon.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Entertainment</h5>
             </div>
@@ -212,7 +176,7 @@
         <h2 class="border-bottom">New Posts:</h2>
         <div class="row">
           <!-- Left Column for Filters -->
-          <div class="col-md-2 border-right">
+          <div class="col-md-2 mt-2">
             <div class="list-group">
               <div class="border-bottom">
                 <div class="d-flex justify-content-between">
@@ -220,15 +184,10 @@
                   <div class="btn py-0">RESET</div>
                 </div>
                 <div class="input-group my-1">
-                  <span class="input-group-text border-right-0 bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                      viewBox="0 0 16 16">
-                      <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                      </path>
-                    </svg>
+                  <span class="input-group-text border-end-0 bg-transparent">
+                    <i class="bi bi-search"></i>
                   </span>
-                  <input type="text" class="form-control mr-sm-2 border-left-0" type="search" placeholder="Keywords"
+                  <input type="text" class="form-control me-sm-2 border-start-0" type="search" placeholder="Keywords"
                     aria-label="Search">
                 </div>
               </div>
@@ -250,49 +209,57 @@
               <div class="border-bottom">
                 <a href="#" class="list-group-item list-group-item-action border-0 py-auto my-2">Filter 6</a>
               </div>
-              
+
               <!-- Repeat for each filter option -->
             </div>
           </div>
           <!-- Middle Column -->
-          <div class="col-md-7 border-right">
+          <div class="col-md-7 border-start border-end">
             <div class="row">
               <!-- Post Card -->
               <div class="col-md-10 post mx-auto my-3">
                 <div class="card border-0 bg-transparent">
                   <div class="card-header py-0">
-                    <h6 class="text-secondary fa">Under {category} by {username} </h6>
+                    <div class="flex justify-content-between">
+                      <a class="h6 d-inline my-auto" href="#"><i class="bi bi-person-circle"></i></a>
+                      <h6 class="d-inline text-secondary">Under {category} by {username} </h6>
+                    </div>
                     <h5 class="card-title my-0">Post 1</h5>
                   </div>
                   <div class="card-body">
-                    <div class="post-img-holder my-auto">
+                    <div class="post-img-holder mt-auto mb-1">
                       <img class="card-img-top" src="./images/post-example.jpg" alt="Post image">
                     </div>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit enim quis tortor ultrices elementum. Curabitur fringilla lacinia odio eu lobortis. Nullam pharetra felis ut mi scelerisque, ac vehicula massa sodales. Nunc auctor est id nulla commodo, at fringilla justo laoreet. Suspendisse ut eros ut justo dignissim finibus ut sit amet purus. Phasellus tempus justo ac felis sodales pellentesque. </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit enim
+                      quis tortor ultrices elementum. Curabitur fringilla lacinia odio eu lobortis. Nullam pharetra
+                      felis ut mi scelerisque, ac vehicula massa sodales. Nunc auctor est id nulla commodo, at fringilla
+                      justo laoreet. Suspendisse ut eros ut justo dignissim finibus ut sit amet purus. Phasellus tempus
+                      justo ac felis sodales pellentesque. </p>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn border-dark">Up vote</a>
-                    <a href="#" class="btn">Down vote</a>
-                    <a href="#" class="btn">Comment</a>
-                    <a href="#" class="btn">Share</a>
+                  <div class="card-footer border-top my-0 py-1">
+                    <a class="btn bg-secondary text-light h4 my-0 px-3" href="#"><i
+                        class="bi bi-arrow-up-square-fill"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-arrow-down-square"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-chat-left"></i></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-send-plus"></i></i></a>
                   </div>
                 </div>
               </div>
               <div class="col-md-10 post mx-auto">
                 <div class="card border-0 bg-transparent">
                   <div class="card-header py-0">
-                    <h6>Under {category} by {username} </h6>
+                    <h6 class="text-secondary">Under {category} by {username} </h6>
                     <h5 class="card-title my-0">Post 2</h5>
                   </div>
                   <div class="card-body">
-
                     <p class="card-text">Post Description</p>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn border-dark">Up Vote</a>
-                    <a href="#" class="btn">Down vote</a>
-                    <a href="#" class="btn">Comment</a>
-                    <a href="#" class="btn">Share</a>
+                  <div class="card-footer border-top my-0 py-1">
+                    <a class="btn bg-secondary text-light h4 my-0 px-3" href="#"><i
+                        class="bi bi-arrow-up-square-fill"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-arrow-down-square"></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-chat-left"></i></i></a>
+                    <a class="btn text-dark h4 my-0 px-3" href="#"><i class="bi bi-send-plus"></i></i></a>
                   </div>
                 </div>
               </div>
@@ -303,15 +270,14 @@
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <p class="card-text"></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit enim
+                  quis tortor ultrices elementum. Curabitur fringilla lacinia odio eu lobortis. Nullam pharetra
+                  felis ut mi scelerisque, ac vehicula massa sodales.</p>
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
-
     </div>
   </div>
 </body>
