@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login Page </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+         $(document).ready(function () { 
+            $("#btn").click(function () { 
+                alert("Congratulatons!!! You have been logged in successfully..."); 
+            }); 
+        }); 
+    </script>
+    <style>
+        body {
+            background-image: url("https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            justify-content: center;
+            text-align: center;
+            position: sticky;
+            /* border: 8px double dodgerblue; */
+            height: 50;
+            width: 50;
+        }
+        h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(174, 255, 0);
+            text-shadow: 0 0 3px #7a8600, 0 0 5px #0988f0;
+            text-align: center;
+        }
+
+        .labeldesign {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow:  0 0 3px #4a93ff, 0 0 5px #d909f0;;
+            font-size: 30px;
+            color: rgb(94, 255, 201);
+        }
+        .labeldesign1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: rgb(232, 27, 112);
+        }
+        .labeldesign2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: rgb(232, 27, 112);
+        }
+        input[type=text],
+        input[type=email], input[type=password]{
+            background-color: #fdfdfd;
+            color: rgb(249, 127, 5);
+            opacity: 70%;
+            font-size: medium;
+        }
+
+        input[type=text]:hover {
+            background-color: black;
+            color: rgb(12, 220, 235);
+            transition: 0.5s;
+        }
+
+        input[type=email]:hover {
+            background-color: black;
+            color: rgb(12, 220, 235);
+            transition: 0.5s;
+        }
+        input[type=password]:hover {
+            background-color: black;
+            color: rgb(12, 220, 235);
+            transition: 0.5s;
+        }
+        input[type=tel]:hover {
+            background-color: black;
+            color: rgb(12, 220, 235);
+            transition: 0.5s;
+        }
+            #city{
+            background-color: #fdfdfd;
+            color: rgb(249, 127, 5);
+            opacity: 70%;
+            font-size: medium;
+        }
+        #city:hover {
+            background-color: black;
+            color: rgb(12, 220, 235);
+            transition: 0.5s;
+        }
+        .img1{
+            height: 200px;
+            width: 250px;
+            border-radius: 500px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src=""alt="prasnalogo" class="img1"><br><br><br>
+        <h1>Welcome to Prasna </h1><br><br><br>
+        <div>
+            <form>
+                <form="/action_page.php">
+                    <label for="fname" class="labeldesign">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="fname"
+                        placeholder="Enter your first name...." required><br><br><br>
+                    <label for="lname" class="labeldesign">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname"
+                        placeholder="Enter your last name...." required><br><br><br>
+                       
+                            <label class="labeldesign" class="form-control">Gender</label>
+                            <input type="radio" id="Male" name="gender" value="male" required>
+                            <label for="male" class="labeldesign1">Male</label>
+                            <input type="radio" id="Female" name="gender" value="female" required >
+                            <label for="female" class="labeldesign1">Female</label>
+                            <input type="radio" id="others" name="gender" value="others" required >
+                            <label for="others" class="labeldesign1">Others</label>
+                       <div><br><br>
+                    <label for="email" class="labeldesign">Email Id</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email...."><br><br><br>
+                    <label for="phone"class="labeldesign">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" class="form-control" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br><br>
+                    <label for="pwd" class="labeldesign">Password</label>
+                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter your password...."><br><br><br>
+                    <label for="cnfpwd" class="labeldesign">Confirm Password</label>
+                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter your password...."><br><br><br>
+
+                    <label for="city" class="labeldesign">City</label>
+                    <select id="city" name="city" class="form-control" >
+                        <option value="">Select your city.....</option>
+                        <option value="India">Mumbai,India</option>
+                        <option value="India">Delhi,India</option>
+                        <option value="India">Chennai,India</option>
+                        <option value="India">Kolkata,India</option>
+                        <option value="India">United States of America,USA</option>
+                        <option value="India">Manhattan,UK</option>
+                        <option value="India">Tokyo,Japan</option>
+                        <option value="India">Seoul,South Korea</option>
+                        <option value="India">Auckland,Canada</option>
+                        <option value="India">Moscow,Russia</option>
+                    </select>
+                </div><br><br><br>
+                <input type="checkbox" id="dec" name="dec" required>
+                <label for="dec" class="labeldesign2">I hereby declare that the information given above and in the enclosed documents is
+                    true to the best of my knowledge and belief and nothing has been concealed therein. I
+                    understand that if the information given by me is proved false/not true, I will have to
+                    face the punishment as per the law. Also, all the benefits availed by me shall be
+                    summarily withdrawn. </label><br><br><br>
+                   <button id="btn"class="btn btn-success btn-lg">Submit</button><br><br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
