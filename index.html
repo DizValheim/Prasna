@@ -41,7 +41,7 @@
         </ul>
       </div>
     </nav>
-    <div class="container hero-container">
+    <div class="container d-flex flex-column vh-100 justify-content-center">
       <header class="hero bg-purple text-light py-5">
         <div class="container">
             <div class="row">
@@ -62,9 +62,9 @@
     </div>
   </div>
 
-  <div class="container-fluid mt-3" id="Home">
+  <div class="container-fluid mt-3" >
     <div class="container-wide px-0 py-0">
-      <nav class="navbar navbar-expand-lg border-bottom py-0">
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom py-0" id="Home">
         <a class="navbar-brand text-purple" href="#" style=" font-family: 'Lobster', sans-serif;">Prasna</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-3 me-3">
             <li class="nav-item">
-              <a class="nav-link bg-secondary text-light border rounded h4 my-0 px-3 mx-1" href="./index.html">
+              <a class="nav-link bg-secondary text-light border rounded h4 my-0 px-3 mx-1" href="./index.html#Home">
                 <i class="bi bi-house-fill"></i>
                 <span class="d-lg-none d-inline px-2">Home</span>
               </a>
@@ -108,6 +108,11 @@
           </form>
 
           <div class="me-2"></div>
+
+          <!-- <div class="form-check form-switch" id="theme-toggle">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckChecked"><i class="bi bi-sun" id="theme-icon"></i></label>
+          </div> -->
 
           <label class="switch me-2">
             <input type="checkbox">

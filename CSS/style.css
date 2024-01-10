@@ -13,12 +13,12 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
   }
 
-  .hero-container {
+  /* .hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-  }
+  } */
 
   .bg-transparent {
     background: rgba(0, 0, 0, 0);
@@ -27,10 +27,6 @@
   .hero {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-  }
-
-  .text-light {
-    color: #fff;
   }
 
   .text-purple {
@@ -54,7 +50,9 @@
   .post:hover {
     border: 1px solid black;
   }
-
+  .topic-card{
+    transition: all ease 0.5s;
+  }
   .topic-card:hover {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.8);
   }
