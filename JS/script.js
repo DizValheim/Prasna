@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+
+  var logo = $(".navbar-brand");
+  logo.css("font-family", "Lobster")
+
   $(".landing-text").each(function(index) {
     $(this).delay(400*index).animate({opacity: 1, left: "+=50"}, 800);
   });
