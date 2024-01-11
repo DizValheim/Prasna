@@ -1,20 +1,15 @@
 $(document).ready(function () {
 
-  // var isScrolling = false;
-  // var homeElement = $('#Home');
-  // var topElement = $('#top'); 
+  $(".landing-text").each(function(index) {
+    $(this).delay(400*index).animate({opacity: 1, left: "+=50"}, 800);
+  });
 
-
-  // $(window).scroll(function() {
-  //     if(isScrolling) {
-  //         return;
-  //     }
-
-  //     isScrolling = true;
-  //     console.log(isScrolling);
-  //     $('html, body').stop().animate({ scrollTop: homeElement.offset().top }, 100);
-  // });
-
+    // var hidden = $('.landing-text');
+    // if (hidden.hasClass('visible')) {
+    //     hidden.animate({"left":"-1000px"}, "slow").removeClass('visible');
+    // } else {
+    //     hidden.animate({"left":"0px"}, "slow").addClass('visible');
+    // }
 
   $("#theme-toggle").click(function () {
     var currentTheme = document.documentElement.getAttribute('data-bs-theme');
@@ -33,4 +28,7 @@ $(document).ready(function () {
       themeIcon.addClass("bi-sun");
     }
   });
+
+
+
 });

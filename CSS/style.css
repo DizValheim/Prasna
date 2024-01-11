@@ -6,7 +6,7 @@
   }
 
   .landing {
-    background-image: url(../images/Background.png);
+    background-image: url(../images/Background-2.png);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,6 +27,11 @@
   .hero {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
+  }
+
+  .landing-text {
+    left: -50px;
+    opacity: 0;
   }
 
   .text-purple {

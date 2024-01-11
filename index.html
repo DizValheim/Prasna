@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prasna</title>
   <link rel="icon" type="image/x-icon" href="./images/prasna-logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Roboto+Mono&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Roboto+Mono&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./CSS/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <script src="./JS/script.js"></script>
 </head>
 
@@ -44,27 +52,30 @@
     <div class="container d-flex flex-column vh-100 justify-content-center">
       <header class="hero bg-purple text-light py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 order-1 order-md-2 my-auto">
-                    <h1>What's On Your Mind???</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat sapien eget massa fringilla
-                        malesuada. Etiam dui dui, sodales a aliquam id, malesuada vitae lorem. Vestibulum semper blandit libero.
-                    </p>
-                    <a class="btn btn-light" id="get-started" href="#Home">Ask Now</a>
-                </div>
-                <div class="col-12 col-md-6 order-md-1">
-                    <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
-                </div>
+          <div class="row">
+            <div class="col-12 col-md-6 order-1 order-md-2 my-auto">
+              <h1 class="landing-text position-relative" style="font-family: 'Rubik Maps', system-ui;">What's On Your
+                Mind???</h1>
+              <p class="landing-text position-relative" style="font-family: 'Kanit', sans-serif;">Welcome to our question and answer platform, where curiosity
+                meets knowledge. This is a place where you can ask anything that sparks your interest and receive
+                answers from experts and enthusiasts alike. Our community is dedicated to sharing insights, exchanging
+                ideas, and fostering enlightenment. So why wait? Start your journey of discovery now.
+              </p>
+              <a class="btn btn-outline-light landing-text" id="get-started" href="#Home">Ask Now</a>
             </div>
+            <div class="col-12 col-md-6 order-md-1">
+              <img src="./images/Man-Thinking.png" alt="Image description" class="img-fluid">
+            </div>
+          </div>
         </div>
-    </header>
-    
+      </header>
+
     </div>
   </div>
 
-  <div class="container-fluid mt-3" >
+  <div class="container-fluid mt-3">
     <div class="container-wide px-0 py-0">
-      <nav class="navbar navbar-expand-lg navbar-light border-bottom py-0" id="Home">
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom py-0">
         <a class="navbar-brand text-purple" href="#" style=" font-family: 'Lobster', sans-serif;">Prasna</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +102,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link h4 my-0 px-3 mx-1" href="#">
+              <a class="nav-link h4 my-0 px-3 mx-1" href="./notfications.html">
                 <i class="bi bi-bell"></i>
                 <span class="d-lg-none d-inline px-2">Notifications</span>
               </a>
@@ -102,12 +113,12 @@
               <span class="input-group-text border-right-0 bg-transparent">
                 <i class="bi bi-search"></i>
               </span>
-              <input type="text" class="form-control me-sm-2 border-start-0" type="search" placeholder="Search Topic"
+              <input type="text" class="form-control pe-5 me-sm-2 border-start-0"  id="Home" type="search" placeholder="Search Topic"
                 aria-label="Search">
             </div>
           </form>
 
-          <div class="me-2"></div>
+          <!-- <div class="me-2"></div> -->
 
           <!-- <div class="form-check form-switch" id="theme-toggle">
             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
@@ -132,7 +143,7 @@
         <!-- Add your genres here -->
         <div class="col-lg-2 col-sm ">
           <div class="card topic-card">
-            <img class="card-img-top img-thumbnail" src="./images/World.png" alt="world-icon" >
+            <img class="card-img-top img-thumbnail" src="./images/World.png" alt="world-icon">
             <div class="card-body">
               <h5 class="card-title">Social</h5>
             </div>
